@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient1"
+    tools:context=".teacherprofile">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+       
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/teacherProfileImage"
+            android:layout_marginTop="24dp"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/ic_default_profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@android:color/white"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/teacherChangePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Photo"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/tName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/gradient2"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/tEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/gradient2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:enabled="false"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/tId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/gradient2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:enabled="false"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/tStream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/gradient2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:enabled="false"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/tSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/gradient2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:enabled="false"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnTeacherLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#0A2C56"/>
+
+    </LinearLayout>
+</ScrollView>

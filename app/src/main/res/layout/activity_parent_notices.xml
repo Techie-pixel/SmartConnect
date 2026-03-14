@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#1B477C"
+        android:elevation="4dp"
+        android:paddingTop="@dimen/status_bar_height"
+        app:titleTextColor="#FFFFFF"
+        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Top Icon -->
+            <ImageView
+                android:id="@+id/logoImg"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/projectlogo"
+                android:contentDescription="Logo"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notices"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Filter Tabs -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:id="@+id/btnAll"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:text="All"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#3B5BDB"
+                    android:layout_marginEnd="6dp" />
+
+                <Button
+                    android:id="@+id/btnUnread"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:text="Unread"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#1A2E55"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp" />
+
+                <Button
+                    android:id="@+id/btnRead"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:text="Read"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#1A2E55"
+                    android:layout_marginStart="6dp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:text="No notices yet"
+                android:textColor="#CCFFFFFF"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <!-- Notices Container -->
+            <LinearLayout
+                android:id="@+id/noticesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

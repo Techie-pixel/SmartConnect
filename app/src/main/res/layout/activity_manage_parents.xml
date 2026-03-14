@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="100dp">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/projectlogo"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Parents"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center" />
+
+        <!-- Parent Mode (Father/Mother) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Select Parent Mode"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+
+        <Spinner
+            android:id="@+id/spinnerParentMode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gradient2" />
+
+        <!-- Parent Name -->
+        <EditText
+            android:id="@+id/etParentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="14dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/gradient2"
+            android:hint="Enter Parent Name"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Parent Email -->
+        <EditText
+            android:id="@+id/etParentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="14dp"
+            android:background="@drawable/gradient2"
+            android:hint="Enter Parent Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Parent Mobile -->
+        <EditText
+            android:id="@+id/etParentMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="14dp"
+            android:background="@drawable/gradient2"
+            android:hint="Enter Parent Mobile Number"
+            android:inputType="phone"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Student Name -->
+        <EditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="14dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/gradient2"
+            android:hint="Enter Student Name"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Create Parent Button -->
+        <Button
+            android:id="@+id/btnCreateParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#0A2C56"
+            android:text="Create Parent"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Delete Parent Button -->
+        <Button
+            android:id="@+id/btnDeleteParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#B00020"
+            android:text="Delete Parent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient1">
+
+    <ImageView
+        android:id="@+id/userimage"
+        android:layout_gravity="center"
+        android:src="@drawable/projectlogo"
+        android:layout_width="140dp"
+        android:layout_height="170dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smartconnect"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold">
+    </TextView>
+
+</LinearLayout>

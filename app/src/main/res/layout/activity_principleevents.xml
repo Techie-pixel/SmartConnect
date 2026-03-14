@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient1">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".principleevents"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/logoImg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/projectlogo"
+            android:contentDescription="Logo"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Select Standard Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Standard"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/gradient2"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioGroup
+                android:id="@+id/standardRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="11"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radio12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="12"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radioAll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Select Stream Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Stream"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/gradient2"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <CheckBox
+                android:id="@+id/checkScience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/checkCommerce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Commerce"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/checkArts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arts"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/checkAllStreams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Streams"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Share with Teachers Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share with Teachers"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/gradient2"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You want to share this event info with teachers also?"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioGroup
+                android:id="@+id/shareTeacherRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioYes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Yes"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radioNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Event Information Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write Event Information (Optional)"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/eventInfoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/gradient2"
+            android:padding="12dp"
+            android:gravity="top|start"
+            android:textStyle="bold"
+            android:hint="Enter event details here..."
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Image Selection Buttons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Image (Optional)"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/cameraBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Camera"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:drawableTop="@android:drawable/ic_menu_camera"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#0A2C56"
+                />
+
+            <Button
+                android:id="@+id/galleryBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Gallery"
+                android:backgroundTint="#0A2C56"
+                android:drawableTop="@android:drawable/ic_menu_gallery"
+                android:padding="12dp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Image Preview Container -->
+        <LinearLayout
+            android:id="@+id/imagePreviewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/gradient2"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/previewImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Event Image Preview"/>
+
+            <Button
+                android:id="@+id/removeImageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Remove Image"
+                android:backgroundTint="#F44336"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:backgroundTint="#0A2C56"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

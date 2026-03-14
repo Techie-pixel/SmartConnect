@@ -1,0 +1,65 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+
+> Task :app:parseDebugLocalResources FAILED
+[Fatal Error] activity_teachersyllabus.xml:338:11: The element type "LinearLayout" must be terminated by the matching end-tag "</LinearLayout>".
+
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:mergeDebugResources FAILED
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:parseDebugLocalResources'.
+> A failure occurred while executing com.android.build.gradle.internal.res.ParseLibraryResourcesTask$ParseResourcesRunnable
+   > Failed to parse XML file 'C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\build\intermediates\packaged_res\debug\packageDebugResources\layout\activity_teachersyllabus.xml'
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:mergeDebugResources'.
+> A failure occurred while executing com.android.build.gradle.internal.res.ResourceCompilerRunnable
+   > Resource compilation failed (Failed to compile resource file: C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\res\layout\activity_teachersyllabus.xml: . Cause: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[27,40]
+     Message: http://www.w3.org/TR/1999/REC-xml-names-19990114#AttributePrefixUnbound?LinearLayout&tools:context&tools). Check logs for more details.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+BUILD FAILED in 5s
+22 actionable tasks: 2 executed, 20 up-to-date

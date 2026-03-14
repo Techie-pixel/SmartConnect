@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Card for Class/Subject Info -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="#2C3E50"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvClassInfoEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class: 11 - Science"
+                android:textColor="#4DD0E1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSubjectInfoEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Subject: Physics"
+                android:textColor="#B0BEC5"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Date Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Select Date to Edit"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSelectedDateEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#ECEFF1"
+        android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+        android:drawablePadding="12dp"
+        android:drawableTint="#2C3E50"
+        android:gravity="center_vertical"
+        android:hint="DD MMM YYYY"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#90A4AE"
+        android:textSize="16sp" />
+
+    <!-- Button to Load Existing Attendance -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLoadAttendanceEdit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:text="Load Attendance"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:backgroundTint="#154360"
+        app:cornerRadius="8dp" />
+
+    <TextView
+        android:id="@+id/tvStudentCountEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0 students loaded"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/studentsContainerEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- Update Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpdateAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="Update Attendance"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:backgroundTint="#0D47A1"
+        app:cornerRadius="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient1">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/projectlogo"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teachers Overview"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/teacherSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search by Name or Subject..."
+            android:textColorHint="@color/black"
+            android:layout_margin="5dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/search_bg"
+            android:textSize="16sp"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:layout_marginBottom="10dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/teacherFilterLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tAllBtn"
+                    android:text="All"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:backgroundTint="#0A2C56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/tSciBtn"
+                    android:text="Science"
+                    android:textStyle="bold"
+                    android:backgroundTint="#0A2C56"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/tComBtn"
+                    android:text="Commerce"
+                    android:textStyle="bold"
+                    android:backgroundTint="#0A2C56"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/tArtBtn"
+                    android:text="Arts"
+                    android:textStyle="bold"
+                    android:backgroundTint="#0A2C56"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/tEleventhBtn"
+                    android:text="11th"
+                    android:textStyle="bold"
+                    android:backgroundTint="#0A2C56"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/tTwelfthBtn"
+                    android:text="12th"
+                    android:textStyle="bold"
+                    android:backgroundTint="#0A2C56"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"/>
+
+                <!-- Recent Chats Filter Button -->
+                <Button
+                    android:id="@+id/tRecentChatsBtn"
+                    android:text="Recent Chats"
+                    android:textStyle="bold"
+                    android:backgroundTint="#0A2C56"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ListView
+            android:id="@+id/teacherListView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:dividerHeight="10dp"
+            android:background="@drawable/gradient2"
+            android:divider="@android:color/transparent"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

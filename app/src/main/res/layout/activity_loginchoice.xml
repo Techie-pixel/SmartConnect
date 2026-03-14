@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/projectlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome! Choose Your Role"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            android:shadowColor="#66000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="4"/>
+
+        <!-- Student Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/gradient2">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/studentlogin"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Student Icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#0A2C56" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Learning is the key to success"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnStudentRegister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:text="Register"
+                            android:textSize="13sp"
+                            android:textColor="@android:color/white"
+                            android:backgroundTint="#0A2C56"
+                            android:paddingLeft="18dp"
+                            android:paddingRight="18dp"
+                            android:layout_marginRight="10dp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#000000"
+                            app:strokeWidth="1dp"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnStudentLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:text="Login"
+                            android:textSize="13sp"
+                            android:textColor="#0A2C56"
+                            android:backgroundTint="@android:color/white"
+                            android:paddingLeft="18dp"
+                            android:paddingRight="18dp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#0A2C56"
+                            app:strokeWidth="2dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Admin Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/gradient2">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/account"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Admin Icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#0A2C56" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manage everything with ease"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="10dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAdminLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:text="Login"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#0A2C56"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        app:cornerRadius="8dp"
+                        app:strokeColor="#000000"
+                        app:strokeWidth="1dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Teacher Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/gradient2">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/teacherlogin"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Teacher Icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teacher"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#0A2C56" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inspire minds, shape futures"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="10dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnTeacherLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:text="Login"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#0A2C56"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        app:cornerRadius="8dp"
+                        app:strokeColor="#000000"
+                        app:strokeWidth="1dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Parents Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardParents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/gradient2">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/parents"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Parents Icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Parents"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#0A2C56" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your child's future starts here"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="10dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnParentsLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:text="Login"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#0A2C56"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        app:cornerRadius="8dp"
+                        app:strokeColor="#000000"
+                        app:strokeWidth="1dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Principal Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPrinciple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/gradient2">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/principle"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Principal Icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Principle"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#0A2C56" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leading the school to excellence"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="10dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnPrincipleLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:text="Login"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#0A2C56"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        app:cornerRadius="8dp"
+                        app:strokeColor="#000000"
+                        app:strokeWidth="1dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homesection" android:title="Home" android:icon="@drawable/homesectionicon"> </item>
+    <item android:id="@+id/profile" android:title="Profile" android:icon="@drawable/profile" />
+    <item android:id="@+id/feedback" android:title="Feedback" android:icon="@drawable/feedback" />
+    <item android:id="@+id/gallery" android:title="Gallery" android:icon="@drawable/gallery" />
+    <item android:id="@+id/syllabus" android:title="Syllabus" android:icon="@drawable/syllabus" />
+    <item android:id="@+id/exam" android:title="Exam" android:icon="@drawable/exam" />
+    <item android:id="@+id/calender" android:title="Calender" android:icon="@drawable/calendar" />
+    <item android:id="@+id/payment" android:title="Payment" android:icon="@drawable/payment" />
+    <item android:id="@+id/table" android:title="Time Table" android:icon="@drawable/table" />
+    <item android:id="@+id/homework" android:title="Homework" android:icon="@drawable/homework" />
+    <item android:id="@+id/student" android:title="Students" android:icon="@drawable/studentslist" />
+    <item android:id="@+id/student_attendance" android:title="Attendance" android:icon="@drawable/calendar" />
+    <item android:id="@+id/contact_admin" android:title="Contact Admin" android:icon="@drawable/ic_contact_admin" />
+
+</menu>

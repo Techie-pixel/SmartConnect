@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ══════════ Permissions ══════════ -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+
+    <!-- Reminder / Notification permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Schoolmanagement"
+        tools:targetApi="31">
+
+        <!-- ══════════ Main / Splash ══════════ -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ══════════ Login Flow ══════════ -->
+        <activity android:name=".loginchoice" android:exported="false" />
+        <activity android:name=".AdminLoginActivity" android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ParentLoginActivity" android:exported="false" />
+        <activity android:name=".loginteacher" android:exported="false" />
+        <activity android:name=".loginotpverification" android:exported="false" />
+        <activity android:name=".admindashboard" android:exported="false" />
+        <activity android:name=".AdminProfileActivity" android:exported="false" />
+        <activity android:name=".ManageTeachersActivity" android:exported="false" />
+        <activity android:name=".ManagePrincipalActivity" android:exported="false" />
+        <activity android:name=".ManageParentsActivity" android:exported="false" />
+        <activity android:name=".ManageStudentsActivity" android:exported="false" />
+
+        <!-- ══════════ Student Auth ══════════ -->
+        <activity android:name=".studentlogin" android:exported="false" />
+        <activity android:name=".studentsignin" android:exported="false" />
+
+        <!-- ══════════ Student Dashboards ══════════ -->
+        <activity android:name=".elevensciencehomepage" android:exported="false" />
+        <activity android:name=".elevencommercehome" android:exported="false" />
+        <activity android:name=".elevenartshome" android:exported="false" />
+        <activity android:name=".twelvesciencehome" android:exported="false" />
+        <activity android:name=".twelvecommercehome" android:exported="false" />
+        <activity android:name=".twelveartshome" android:exported="false" />
+
+        <!-- ══════════ Student Features ══════════ -->
+        <activity android:name=".studentprofile" android:exported="false" />
+        <activity android:name=".studentassignment" android:exported="false" />
+        <activity android:name=".studentcalender" android:exported="false" />
+        <activity android:name=".studentchat" android:exported="false" />
+        <activity android:name=".studentexam" android:exported="false" />
+        <activity android:name=".studentfeedback" android:exported="false" />
+        <activity android:name=".teacherfeedback" android:exported="false" />
+        <activity android:name=".principalfeedback" android:exported="false" />
+        <activity android:name=".AdminFeedbackActivity" android:exported="false" />
+        <activity android:name=".AdminEcommerceActivity" android:exported="false" />
+        <activity android:name=".StudentEcommerceActivity" android:exported="false" />
+        <activity android:name=".studentgallery" android:exported="false" />
+        <activity android:name=".studenthomework" android:exported="false" />
+        <activity android:name=".studentpayment" android:exported="false" />
+        <activity android:name=".studentsyllabus" android:exported="false" />
+        <activity android:name=".studenttimetable" android:exported="false" />
+        <activity android:name=".studentslist" android:exported="false" />
+        <activity android:name=".userprofile" android:exported="false" />
+        <activity android:name=".StudentNoticesActivity" android:exported="false" />
+
+        <!-- ══════════ Teacher Dashboard ══════════ -->
+        <activity android:name=".teachertab" android:exported="false" />
+        <activity android:name=".teacherprofile" android:exported="false" />
+        <activity android:name=".teacherassignments" android:exported="false" />
+        <activity android:name=".teacherchat" android:exported="false" />
+        <activity android:name=".teacherecommerce" android:exported="false" />
+        <activity android:name=".TeacherSubmissionsActivity" android:exported="false" />
+        <activity android:name=".teacherhomework" android:exported="false" />
+        <activity android:name=".TeacherHomeworkSubmissionsActivity" android:exported="false" />
+        <activity android:name=".teacherslist" android:exported="false" />
+        <activity android:name=".teachersyllabus" android:exported="false" />
+        <activity android:name=".teachertimetable" android:exported="false" />
+        <activity android:name=".teacherexam" android:exported="false" />
+        <activity android:name=".teachercalender" android:exported="false" />
+        <activity android:name=".teacherattendance" android:exported="false" />
+        <activity android:name=".TeacherNoticesActivity" android:exported="false" />
+        <activity android:name=".teacherprofileview" android:exported="false" />
+        <activity android:name=".manageteachers" android:exported="false" />
+        <activity android:name=".DeleteTeacherActivity" android:exported="false" />
+        <activity android:name=".DeletePrincipalActivity" android:exported="false" />
+        <activity android:name=".DeleteParentActivity" android:exported="false" />
+
+        <!-- ══════════ Principal Dashboard ══════════ -->
+        <activity android:name=".principaltab" android:exported="false" />
+        <activity android:name=".principleprofile" android:exported="false" />
+        <activity android:name=".peinciplegallery" android:exported="false" />
+        <activity android:name=".principleevents" android:exported="false" />
+
+        <activity android:name=".principletimetable" android:exported="false" />
+        <activity android:name=".principle_full_image" android:exported="false" />
+        <activity android:name=".PrincipalEcommerceActivity" android:exported="false" />
+        <activity android:name=".PrincipalPaymentActivity" android:exported="false" />
+        <activity android:name=".PrincipalCalendarActivity" android:exported="false" />
+        <activity android:name=".PrincipalExamActivity" android:exported="false" />
+        <activity android:name=".PrincipalNoticesActivity" android:exported="false" />
+        <activity android:name=".ParentDashboardActivity" android:exported="false" />
+        <activity android:name=".ParentProfileActivity" android:exported="false" />
+        <activity android:name=".ParentFeedbackActivity" android:exported="false" />
+        <activity android:name=".ParentNoticesActivity" android:exported="false" />
+        <activity android:name=".ParentSyllabusActivity" android:exported="false" />
+        <activity android:name=".studentattendance" android:exported="false" />
+        <activity android:name=".ParentAttendanceActivity" android:exported="false" />
+        <activity android:name=".ParentExamActivity" android:exported="false" />
+        <activity android:name=".ParentTimetableActivity" android:exported="false" />
+
+        <!-- ══════════ Shared / Utilities ══════════ -->
+        <activity android:name=".ImagePreviewActivity" android:exported="false" />
+        <activity android:name=".Image_detail" android:exported="false" />
+        <activity android:name=".requestdesk" android:exported="false" />
+
+        <!-- ══════════ Chat Notification Service ══════════ -->
+        <service
+            android:name=".ChatNotificationService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- ══════════ Chat Reply Receiver ══════════ -->
+        <receiver
+            android:name=".ChatReplyReceiver"
+            android:exported="false" />
+
+        <!-- ══════════ Reminder BroadcastReceiver ══════════ -->
+        <receiver
+            android:name=".ReminderReceiver"
+            android:exported="false" />
+
+        <!-- Boot receiver (reminders survive reboot) -->
+        <receiver
+            android:name=".BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ══════════ Fees Module Activities ══════════ -->
+        <activity
+            android:name=".ParentFeesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherFeesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFeesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminContactMessagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyContactMessagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactMessageDetailActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

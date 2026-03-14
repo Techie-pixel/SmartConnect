@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/principal_home"
+            android:title="Home"
+            android:icon="@drawable/homesectionicon" />
+        <item
+            android:id="@+id/principal_timetable"
+            android:title="Time Table"
+            android:icon="@drawable/table" />
+        <item
+            android:id="@+id/principal_exam"
+            android:title="Exam"
+            android:icon="@drawable/exam" />
+        <item
+            android:id="@+id/principal_notices"
+            android:title="Notices"
+            android:icon="@drawable/notices" />
+        <item
+            android:id="@+id/principal_calender"
+            android:title="Calender"
+            android:icon="@drawable/calendar" />
+        <item
+            android:id="@+id/principal_payment"
+            android:title="Payment"
+            android:icon="@drawable/payment" />
+        <item
+            android:id="@+id/principal_feedback"
+            android:title="Feedback"
+            android:icon="@drawable/feedback" />
+        <item
+            android:id="@+id/principal_contact_admin"
+            android:title="Contact Admin"
+            android:icon="@drawable/ic_contact_admin" />
+    </group>
+</menu>

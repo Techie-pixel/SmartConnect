@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/teacher_home" android:title="Home" android:icon="@drawable/homesectionicon"/>
+        <item android:id="@+id/teacher_assignments" android:title="Assignments" android:icon="@drawable/assignment"/>
+        <item android:id="@+id/teacher_homework" android:title="Homework" android:icon="@drawable/homework"/>
+        <item android:id="@+id/teacher_syllabus" android:title="Syllabus" android:icon="@drawable/syllabus"/>
+        <item android:id="@+id/teacher_timetable" android:title="Time Table" android:icon="@drawable/table"/>
+        <item android:id="@+id/teacher_exam" android:title="Exam" android:icon="@drawable/exam"/>
+        <item android:id="@+id/teacher_calendar" android:title="Calendar" android:icon="@drawable/calendar"/>
+        <item android:id="@+id/teacher_attendance" android:title="Attendance" android:icon="@drawable/studentslist"/>
+        <item android:id="@+id/teacher_feedback" android:title="Feedback" android:icon="@drawable/feedback"/>
+        <item android:id="@+id/teacher_notices" android:title="Notices" android:icon="@drawable/notices"/>
+        <item android:id="@+id/teacher_fees" android:title="Fees" android:icon="@drawable/payment"/>
+        <item android:id="@+id/teacher_contact_admin" android:title="Contact Admin" android:icon="@drawable/ic_contact_admin"/>
+    </group>
+</menu>

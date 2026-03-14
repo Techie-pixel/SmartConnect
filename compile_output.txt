@@ -1,0 +1,27 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:mergeDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugResources
+
+> Task :app:compileDebugJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\manageteachers.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+[Incubating] Problems report is available at: file:///C:/Users/kinga/AndroidStudioProjects/finalyearproject/smartconnect/schoolmanagement/schoolmanagement/schoolmanagement/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 6s
+16 actionable tasks: 7 executed, 9 up-to-date

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/projectlogo"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Principal"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/etPrincipalId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/gradient2"
+            android:hint="Enter Principal ID (min 6 chars)"
+            android:inputType="text"
+            android:maxLength="20"
+            android:padding="14dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/etPrincipalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/gradient2"
+            android:hint="Enter Principal Name"
+            android:padding="14dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/etPrincipalEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/gradient2"
+            android:hint="Enter Principal Email"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/etPrincipalMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/gradient2"
+            android:hint="Enter Mobile Number"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:padding="14dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btnCreatePrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#0A2C56"
+            android:text="Create Principal"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnDeletePrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#B00020"
+            android:text="Delete Principal"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>

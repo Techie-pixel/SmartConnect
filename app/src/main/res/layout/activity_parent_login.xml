@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:contentDescription="App Logo"
+            android:src="@drawable/projectlogo"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parents Login"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your child's future starts here"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/parentName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Enter Your Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/gradient2"
+            android:padding="14dp"
+            android:textColor="@color/black"
+            android:textColorHint="#666666"
+            android:layout_marginBottom="14dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/parentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/gradient2"
+            android:padding="14dp"
+            android:textColor="@color/black"
+            android:textColorHint="#666666"
+            android:layout_marginBottom="14dp" />
+
+        <!-- Mobile -->
+        <EditText
+            android:id="@+id/parentMobile"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Enter Your Mobile No."
+            android:inputType="phone"
+            android:background="@drawable/gradient2"
+            android:padding="14dp"
+            android:textColor="@color/black"
+            android:textColorHint="#666666"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/parentLoginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#0A2C56" />
+
+    </LinearLayout>
+</ScrollView>

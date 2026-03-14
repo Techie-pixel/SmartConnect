@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- LOGO -->
+
+
+        <!-- PROFILE IMAGE -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/principalProfileImage"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/ic_default_profile"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="40dp"
+            app:civ_border_color="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- CHANGE PHOTO -->
+        <TextView
+            android:id="@+id/principalChangePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Photo"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- EMAIL -->
+        <TextView
+            android:id="@+id/principalEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: principal@example.com"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="@drawable/gradient2"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- PRINCIPAL ID -->
+        <TextView
+            android:id="@+id/principalId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Principal ID: -"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="@drawable/gradient2"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="14dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            android:layout_marginTop="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/gradient2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Info"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#0A2C56"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Role: Principal"
+                    android:textSize="15sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tip: Keep your profile updated."
+                    android:textSize="14sp"
+                    android:textColor="#555555"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- LOGOUT -->
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#0A2C56"
+            android:padding="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

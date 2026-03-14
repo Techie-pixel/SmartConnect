@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient1">
+
+    <!-- Top: Logo + Welcome -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="24dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/adminMainLogo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/projectlogo" />
+
+        <TextView
+            android:id="@+id/adminWelcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, Admin"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+
+    <!-- Scrollable content below -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="20dp">
+
+            <!-- Banner -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp">
+                <ViewFlipper
+                    android:id="@+id/adminBannerFlipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoStart="true"
+                    android:flipInterval="3000"
+                    android:inAnimation="@android:anim/slide_in_left"
+                    android:outAnimation="@android:anim/slide_out_right">
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/admintabdash1" android:scaleType="centerCrop" android:contentDescription="Banner 1" />
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/admintabdash2" android:scaleType="centerCrop" android:contentDescription="Banner 2" />
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/admintabdash3" android:scaleType="centerCrop" android:contentDescription="Banner 3" />
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/admintabdash4" android:scaleType="centerCrop" android:contentDescription="Banner 4" />
+                </ViewFlipper>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Row 1: Teachers + Principal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardManageTeachers"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="6dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/gradient2">
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/teacherlogin"
+                            android:scaleType="centerInside"
+                            android:contentDescription="Manage Teachers"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Manage\nTeachers"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#0A2C56"
+                            android:gravity="center"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardManagePrincipal"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/gradient2">
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/principle"
+                            android:scaleType="centerInside"
+                            android:contentDescription="Manage Principal"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Manage\nPrincipal"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#0A2C56"
+                            android:gravity="center"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Row 2: Parents + Students -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardManageParents"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="6dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/gradient2">
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/parents"
+                            android:scaleType="centerInside"
+                            android:contentDescription="Manage Parents"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Manage\nParents"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#0A2C56"
+                            android:gravity="center"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardManageStudents"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/gradient2">
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/studentlogin"
+                            android:scaleType="centerInside"
+                            android:contentDescription="Manage Students"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Manage\nStudents"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#0A2C56"
+                            android:gravity="center"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Row 3: Profile + Feedback -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="6dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/gradient2">
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/account"
+                            android:scaleType="centerInside"
+                            android:contentDescription="Profile"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profile"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#0A2C56"
+                            android:gravity="center"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardFeedback"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/gradient2">
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/feedback"
+                            android:scaleType="centerInside"
+                            android:contentDescription="Feedback"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Feedback"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#0A2C56"
+                            android:gravity="center"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Row 4: E-Commerce + Manage Fees -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardEcommerce"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="6dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/gradient2">
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ecommerce"
+                            android:scaleType="centerInside"
+                            android:contentDescription="E-Commerce"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E-Commerce"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#0A2C56"
+                            android:gravity="center"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardFees"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/gradient2">
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/payment"
+                            android:scaleType="centerInside"
+                            android:contentDescription="Manage Fees"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Manage Fees"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#0A2C56"
+                            android:gravity="center"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Row 5: Contact Messages (Centered) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="12dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardContactMessages"
+                    android:layout_width="160dp"
+                    android:layout_height="130dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/gradient2">
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_contact_admin"
+                            android:scaleType="centerInside"
+                            android:contentDescription="Contact Messages"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contact\nMessages"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#0A2C56"
+                            android:gravity="center"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:71: error: cannot find symbol
+            navigationView.inflateMenu(R.menu.parent_drawer_menu);
+                                             ^
+  symbol:   variable parent_drawer_menu
+  location: class menu
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:315: error: cannot find symbol
+            } else if (id == R.id.principal_calendar) {
+                                 ^
+  symbol:   variable principal_calendar
+  location: class id
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:317: error: cannot find symbol
+            } else if (id == R.id.principal_payments) {
+                                 ^
+  symbol:   variable principal_payments
+  location: class id
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:330: error: cannot find symbol
+            if (id == R.id.parent_home) {
+                          ^
+  symbol:   variable parent_home
+  location: class id
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:331: error: cannot find symbol
+                intent = new Intent(this, parenttab.class);
+                                          ^
+  symbol:   class parenttab
+  location: class ContactAdminActivity
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:332: error: cannot find symbol
+            } else if (id == R.id.parent_attendance) {
+                                 ^
+  symbol:   variable parent_attendance
+  location: class id
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:333: error: cannot find symbol
+                intent = new Intent(this, parentattendance.class);
+                                          ^
+  symbol:   class parentattendance
+  location: class ContactAdminActivity
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:334: error: cannot find symbol
+            } else if (id == R.id.parent_payment) {
+                                 ^
+  symbol:   variable parent_payment
+  location: class id
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:335: error: cannot find symbol
+                intent = new Intent(this, parentpayment.class);
+                                          ^
+  symbol:   class parentpayment
+  location: class ContactAdminActivity
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:336: error: cannot find symbol
+            } else if (id == R.id.parent_homework) {
+                                 ^
+  symbol:   variable parent_homework
+  location: class id
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:337: error: cannot find symbol
+                intent = new Intent(this, parenthomework.class);
+                                          ^
+  symbol:   class parenthomework
+  location: class ContactAdminActivity
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:338: error: cannot find symbol
+            } else if (id == R.id.parent_timetable) {
+                                 ^
+  symbol:   variable parent_timetable
+  location: class id
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:339: error: cannot find symbol
+                intent = new Intent(this, parenttimetable.class);
+                                          ^
+  symbol:   class parenttimetable
+  location: class ContactAdminActivity
+C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:340: error: cannot find symbol
+            } else if (id == R.id.parent_contact_admin) {
+                                 ^
+  symbol:   variable parent_contact_admin
+  location: class id
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\manageteachers.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+14 errors
+
+> Task :app:compileDebugJavaWithJavac FAILED
+[Incubating] Problems report is available at: file:///C:/Users/kinga/AndroidStudioProjects/finalyearproject/smartconnect/schoolmanagement/schoolmanagement/schoolmanagement/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  Note: C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\manageteachers.java uses unchecked or unsafe operations.
+  Note: Recompile with -Xlint:unchecked for details.
+  Note: Recompile with -Xlint:deprecation for details.
+  Note: Some input files use or override a deprecated API.
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:71: error: cannot find symbol
+              navigationView.inflateMenu(R.menu.parent_drawer_menu);
+                                               ^
+    symbol:   variable parent_drawer_menu
+    location: class menu
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:315: error: cannot find symbol
+              } else if (id == R.id.principal_calendar) {
+                                   ^
+    symbol:   variable principal_calendar
+    location: class id
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:317: error: cannot find symbol
+              } else if (id == R.id.principal_payments) {
+                                   ^
+    symbol:   variable principal_payments
+    location: class id
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:330: error: cannot find symbol
+              if (id == R.id.parent_home) {
+                            ^
+    symbol:   variable parent_home
+    location: class id
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:331: error: cannot find symbol
+                  intent = new Intent(this, parenttab.class);
+                                            ^
+    symbol:   class parenttab
+    location: class ContactAdminActivity
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:332: error: cannot find symbol
+              } else if (id == R.id.parent_attendance) {
+                                   ^
+    symbol:   variable parent_attendance
+    location: class id
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:333: error: cannot find symbol
+                  intent = new Intent(this, parentattendance.class);
+                                            ^
+    symbol:   class parentattendance
+    location: class ContactAdminActivity
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:334: error: cannot find symbol
+              } else if (id == R.id.parent_payment) {
+                                   ^
+    symbol:   variable parent_payment
+    location: class id
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:335: error: cannot find symbol
+                  intent = new Intent(this, parentpayment.class);
+                                            ^
+    symbol:   class parentpayment
+    location: class ContactAdminActivity
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:336: error: cannot find symbol
+              } else if (id == R.id.parent_homework) {
+                                   ^
+    symbol:   variable parent_homework
+    location: class id
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:337: error: cannot find symbol
+                  intent = new Intent(this, parenthomework.class);
+                                            ^
+    symbol:   class parenthomework
+    location: class ContactAdminActivity
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:338: error: cannot find symbol
+              } else if (id == R.id.parent_timetable) {
+                                   ^
+    symbol:   variable parent_timetable
+    location: class id
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:339: error: cannot find symbol
+                  intent = new Intent(this, parenttimetable.class);
+                                            ^
+    symbol:   class parenttimetable
+    location: class ContactAdminActivity
+  C:\Users\kinga\AndroidStudioProjects\finalyearproject\smartconnect\schoolmanagement\schoolmanagement\schoolmanagement\app\src\main\java\com\example\schoolmanagement\ContactAdminActivity.java:340: error: cannot find symbol
+              } else if (id == R.id.parent_contact_admin) {
+                                   ^
+    symbol:   variable parent_contact_admin
+    location: class id
+  14 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+16 actionable tasks: 1 executed, 15 up-to-date
+> Run with --scan to get full insights.
+
+BUILD FAILED in 5s

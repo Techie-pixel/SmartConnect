@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".studentslist"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gradient1">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#1B477C"
+            android:elevation="4dp"
+            android:paddingTop="@dimen/status_bar_height"
+            app:titleTextColor="#FFFFFF"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/projectlogo"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Students Overview"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"/>
+
+                <EditText
+                    android:id="@+id/searchBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Search by Name..."
+                    android:textColorHint="@color/black"
+                    android:layout_margin="5dp"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@drawable/search_bg"
+                    android:textSize="16sp"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:layout_marginBottom="10dp"/>
+
+                <!-- ✅ Sliding Filter Bar with Recent Chats button -->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/filterLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/allBtn"
+                            android:text="All"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:backgroundTint="#0A2C56"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <Button
+                            android:id="@+id/sciBtn"
+                            android:text="Science"
+                            android:textStyle="bold"
+                            android:backgroundTint="#0A2C56"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"/>
+                        <Button
+                            android:id="@+id/comBtn"
+                            android:text="Commerce"
+                            android:layout_width="wrap_content"
+                            android:textStyle="bold"
+                            android:backgroundTint="#0A2C56"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"/>
+                        <Button
+                            android:id="@+id/artBtn"
+                            android:text="Arts"
+                            android:textStyle="bold"
+                            android:backgroundTint="#0A2C56"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"/>
+                        <Button
+                            android:id="@+id/eleventhBtn"
+                            android:text="11th"
+                            android:textStyle="bold"
+                            android:backgroundTint="#0A2C56"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"/>
+                        <Button
+                            android:id="@+id/twelfthBtn"
+                            android:text="12th"
+                            android:textStyle="bold"
+                            android:backgroundTint="#0A2C56"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"/>
+
+                        <!-- Recent Chats Filter Button -->
+                        <Button
+                            android:id="@+id/recentChatsBtn"
+                            android:text="Recent Chats"
+                            android:textStyle="bold"
+                            android:backgroundTint="#0A2C56"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <!-- Students/Chats List -->
+                <ListView
+                    android:id="@+id/mainListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:dividerHeight="10dp"
+                    android:background="@drawable/gradient2"
+                    android:divider="@android:color/transparent"
+                    android:paddingBottom="10dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        app:itemTextColor="@color/white"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/nav_header"
+        android:id="@+id/navigationview"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
