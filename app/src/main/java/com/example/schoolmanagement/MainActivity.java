@@ -85,11 +85,15 @@ public class MainActivity extends AppCompatActivity {
             // 4) PARENT SESSION CHECK
             SharedPreferences parentPrefs = getSharedPreferences("ParentPrefs", MODE_PRIVATE);
             boolean isParentLoggedIn = parentPrefs.getBoolean("isParentLoggedIn", false);
-            if (isParentLoggedIn) {
+            String parentKey = parentPrefs.getString("parentKey", "");
+            if (isParentLoggedIn && !parentKey.isEmpty()) {
                 Intent parentIntent = new Intent(MainActivity.this, ParentDashboardActivity.class);
                 startActivity(parentIntent);
                 finish();
                 return;
+            } else if (isParentLoggedIn) {
+                // Session exists but is broken (missing parentKey), clear it
+                parentPrefs.edit().clear().apply();
             }
 
             // 5) Firebase Auth student check

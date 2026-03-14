@@ -104,8 +104,42 @@ public class ParentLoginActivity extends AppCompatActivity {
             return;
         }
 
-        showLoading(parentLoginBtn, "Sending OTP...");
+        showLoading(parentLoginBtn, "Verifying...");
 
+        // Verify if parent exists in Firebase before sending OTP
+        com.google.firebase.database.DatabaseReference parentsRef = com.google.firebase.database.FirebaseDatabase.getInstance().getReference("Parents");
+        parentsRef.addListenerForSingleValueEvent(new com.google.firebase.database.ValueEventListener() {
+            @Override
+            public void onDataChange(@androidx.annotation.NonNull com.google.firebase.database.DataSnapshot snapshot) {
+                boolean found = false;
+                for (com.google.firebase.database.DataSnapshot child : snapshot.getChildren()) {
+                    String dbEmail = child.child("email").getValue(String.class);
+                    if (email.equalsIgnoreCase(dbEmail)) {
+                        found = true;
+                        break;
+                    }
+                }
+
+                if (!found) {
+                    hideLoading(parentLoginBtn);
+                    Toast.makeText(ParentLoginActivity.this, "This email is not registered as a parent.", Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+                // Parent found, proceed to send OTP
+                sendOTP(name, email, mobile);
+            }
+
+            @Override
+            public void onCancelled(@androidx.annotation.NonNull com.google.firebase.database.DatabaseError error) {
+                hideLoading(parentLoginBtn);
+                Toast.makeText(ParentLoginActivity.this, "Database error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void sendOTP(String name, String email, String mobile) {
+        parentLoginBtn.setText("Sending OTP...");
         // Generate OTP and send via email
         String otp = String.format("%06d", new Random().nextInt(1000000));
 

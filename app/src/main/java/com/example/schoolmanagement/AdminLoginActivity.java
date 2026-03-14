@@ -31,8 +31,8 @@ public class AdminLoginActivity extends AppCompatActivity {
     private ObjectAnimator buttonAnimator;
     private String originalButtonText;
 
-    private static final String ADMIN_EMAIL = "adityabokde33@gmail.com";
-    private static final String ADMIN_PASSWORD = "Admin1";
+    private static final String ADMIN_EMAIL = "admin@example.com";
+    private static final String ADMIN_PASSWORD = "your_admin_password";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

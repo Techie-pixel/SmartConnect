@@ -473,7 +473,7 @@ public class ParentFeesActivity extends AppCompatActivity {
                         // Send email notification to Admin
                         new Thread(() -> {
                             try {
-                                String adminEmail = "adityabokde33@gmail.com";
+                                String adminEmail = "admin@example.com";
                                 String subject = "New Fee Payment Received - SmartConnect";
                                 String body = "Hello Admin,\n\n" +
                                         "A new fee payment has been made.\n\n" +
@@ -524,7 +524,7 @@ public class ParentFeesActivity extends AppCompatActivity {
                         // Send email notification to Admin
                         new Thread(() -> {
                             try {
-                                String adminEmail = "adityabokde33@gmail.com";
+                                String adminEmail = "admin@example.com";
                                 String subject = "New Parent Query - SmartConnect";
                                 String body = "Hello Admin,\n\n" +
                                         "You have received a new fee-related query.\n\n" +

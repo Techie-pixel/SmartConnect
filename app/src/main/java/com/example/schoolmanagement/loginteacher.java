@@ -40,9 +40,9 @@ public class loginteacher extends AppCompatActivity {
     private ObjectAnimator buttonAnimator;
     private String originalButtonText;
 
-    private static final String PRINCIPAL_ID = "951890";
-    private static final String PRINCIPAL_EMAIL = "principlelogin@gmail.com";
-    private static final String PRINCIPAL_NAME = "principle";
+    private static final String PRINCIPAL_ID = "YOUR_PRINCIPAL_ID";
+    private static final String PRINCIPAL_EMAIL = "principal@example.com";
+    private static final String PRINCIPAL_NAME = "Principal Name";
 
     String selectedStandard = "";
     String selectedStream = "";

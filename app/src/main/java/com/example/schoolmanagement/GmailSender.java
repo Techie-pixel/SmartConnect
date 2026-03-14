@@ -11,8 +11,8 @@ import javax.mail.internet.MimeMessage;
 
 public class GmailSender {
 
-    private static final String SENDER_EMAIL = "schoolmanagement748@gmail.com";
-    private static final String APP_PASSWORD = "wxxllzangcdxhese";
+    private static final String SENDER_EMAIL = "your_email@gmail.com";
+    private static final String APP_PASSWORD = "your_16_digit_app_password";
 
     // Original method for sending OTP
     public static void sendMail(final String recipientEmail, final String otpValue) throws Exception {

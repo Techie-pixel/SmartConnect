@@ -256,6 +256,8 @@ public class loginotpverification extends AppCompatActivity {
         com.google.firebase.database.DatabaseReference parentsRef = FirebaseDatabase.getInstance()
                 .getReference("Parents");
         parentsRef.addListenerForSingleValueEvent(new com.google.firebase.database.ValueEventListener() {
+            private boolean found = false;
+
             @Override
             public void onDataChange(@androidx.annotation.NonNull com.google.firebase.database.DataSnapshot snapshot) {
                 for (com.google.firebase.database.DataSnapshot child : snapshot.getChildren()) {
@@ -274,24 +276,28 @@ public class loginotpverification extends AppCompatActivity {
                                 .putString("studentStandard", sStd != null ? sStd : "")
                                 .putString("studentStream", sStream != null ? sStream : "")
                                 .apply();
+                        found = true;
                         break;
                     }
                 }
 
-                Toast.makeText(loginotpverification.this, "Welcome, " + userName + "!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(loginotpverification.this, ParentDashboardActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
-                finish();
+                if (found) {
+                    Toast.makeText(loginotpverification.this, "Welcome, " + userName + "!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(loginotpverification.this, ParentDashboardActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    hideLoading(verifyBtn);
+                    Toast.makeText(loginotpverification.this, "Error: Parent details not found in database.", Toast.LENGTH_LONG).show();
+                    // Optional: redirect to login
+                }
             }
 
             @Override
             public void onCancelled(@androidx.annotation.NonNull com.google.firebase.database.DatabaseError error) {
-                Toast.makeText(loginotpverification.this, "Welcome, " + userName + "!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(loginotpverification.this, ParentDashboardActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
-                finish();
+                hideLoading(verifyBtn);
+                Toast.makeText(loginotpverification.this, "Database error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
