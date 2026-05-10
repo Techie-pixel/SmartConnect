@@ -141,8 +141,6 @@ Contributions, issues, and feature requests are highly welcome!
 
 ---
 
-## 📜 License
-This project is open-source and distributed under the **MIT License**. See `LICENSE` for more information.
 
 <p align="center">
   <i>Architected & Developed with ❤️ for the future of education.</i>
