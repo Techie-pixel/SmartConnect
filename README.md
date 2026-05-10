@@ -8,7 +8,6 @@
     <a href="https://android.com"><img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" /></a>
     <a href="https://www.java.com/"><img src="https://img.shields.io/badge/Language-Java-f89820?style=for-the-badge&logo=java&logoColor=white" alt="Java" /></a>
     <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Backend-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase" /></a>
-    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License" /></a>
   </p>
 </div>
 
