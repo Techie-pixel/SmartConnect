@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/android/android.png" width="100" alt="Android Logo">
 
-  <h1>🏫 SmartConnect</h1>
+  <h1> SmartConnect</h1>
   <p><strong>Next-Generation School Management Ecosystem</strong></p>
 
   <p>
@@ -13,18 +13,18 @@
 
 ---
 
-## 📖 About SmartConnect
+## About SmartConnect
 **SmartConnect** is a robust, enterprise-grade Android application designed to bridge the gap between administrators, principals, teachers, students, and parents. Developed as a comprehensive final year project, it eliminates fragmentation in educational institutions by unifying administration, communication, academics, and e-commerce into a single, high-performance platform.
 
 Powered by **Firebase Realtime Database** and engineered with fluid **native UI animations**, SmartConnect guarantees sub-second data synchronization while delivering a premium user experience.
 
 ---
 
-## 🌟 Key Features & Ecosystem
+## Key Features & Ecosystem
 
 SmartConnect employs strict **Role-Based Access Control (RBAC)** offering tailored dashboards for 5 distinct operational roles:
 
-### 👑 1. Administration (Super Admin)
+### 1. Administration (Super Admin)
 The heart of the system, handling overarching institutional management.
 - **Global Control:** Create, verify, and manage all users (Principals, Teachers, Students, Parents).
 - **Financial Hub:** Complete fee management, invoice tracking, and payment history.
@@ -32,28 +32,28 @@ The heart of the system, handling overarching institutional management.
 - **Campus E-commerce:** Manage the digital school shop, add products, and track orders.
 - **Broadcasting:** Push global notices and resolve critical queries via Admin Support Chat.
 
-### 🏛️ 2. Principal
+### 2. Principal
 Strategic oversight and institutional monitoring.
 - **Macro Analytics:** Real-time dashboards monitoring attendance trends and academic performance.
 - **Directory Access:** Instant access to full staff, student, and parent directories.
 - **Scheduling Authority:** Oversee and approve global exam schedules and master timetables.
 - **Institutional Broadcasting:** Issue high-priority notices and event updates.
 
-### 👨‍🏫 3. Teacher
+### 3. Teacher
 Empowering educators with intuitive classroom management tools.
 - **Classroom Ops:** Digital attendance tracking and immediate record syncing.
 - **Academic Tracking:** Publish assignments, grade homework, and upload exam results.
 - **Communication:** Direct, secure chat channels with students and parents.
 - **Schedule Management:** Personalized tracking of timetables and upcoming assigned lectures.
 
-### 👨‍🎓 4. Student
+### 4. Student
 A dynamic, student-centric academic hub.
 - **Performance Tracker:** Monitor personal attendance metrics and exam progress.
 - **Digital Backpack:** Access syllabus, assignments, and class timetables instantly.
 - **School Shop:** Browse the e-commerce store to requisition school supplies directly.
 - **Direct Engagement:** Chat with subject teachers and track official school notices.
 
-### 👪 5. Parent
+### 5. Parent
 Ensuring absolute transparency in a child's educational journey.
 - **Real-time Monitoring:** Push notifications for child's attendance anomalies.
 - **Academic Insights:** Track exam grades, assignment completion, and syllabus progress.
@@ -62,7 +62,7 @@ Ensuring absolute transparency in a child's educational journey.
 
 ---
 
-## 🛠️ Technical Architecture & Stack
+## Technical Architecture & Stack
 
 ### Frontend Application (Android)
 - **Language:** Native Java (Android SDK)
@@ -79,7 +79,7 @@ Ensuring absolute transparency in a child's educational journey.
 
 ---
 
-## 🔒 Security Posture
+## Security Posture
 Data integrity and privacy are paramount in SmartConnect:
 - **Two-Factor Onboarding:** Custom SMTP-driven OTP verification via `GmailSender` before account provisioning.
 - **Encrypted Transmission:** All client-server communication goes through Firebase's encrypted channels.
@@ -88,7 +88,7 @@ Data integrity and privacy are paramount in SmartConnect:
 
 ---
 
-## ⚙️ Installation & Setup Guide
+## Installation & Setup Guide
 
 ### Prerequisites
 - **Android Studio:** Ladybug (2024.2.1) or higher.
@@ -111,7 +111,7 @@ Data integrity and privacy are paramount in SmartConnect:
 
 ---
 
-## 📂 Codebase Anatomy
+## Codebase Anatomy
 ```text
 SmartConnect/
 ├── app/src/main/
@@ -131,7 +131,7 @@ SmartConnect/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 Contributions, issues, and feature requests are highly welcome! 
 1. Fork the project.
 2. Create your feature branch: `git checkout -b feature/EpicSuperFeature`
